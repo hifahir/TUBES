@@ -33,9 +33,8 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="main.cpp" />
-		<Unit filename="queueJadwal.cpp" />
+		<Unit filename="snq.cpp" />
 		<Unit filename="snq.h" />
-		<Unit filename="stackTiket.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
