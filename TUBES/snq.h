@@ -19,6 +19,7 @@ using namespace std;
 struct film{
     string judul;
     int jadwal;
+    int tiketID;
 };
 
 struct tiket{
@@ -53,9 +54,9 @@ void printInfo(tiket S);
 void createAntrian(bioskop &Q);
 void CreateElement(film filmBaru, adr &P);
 void enqueue(bioskop &Q, adr P);
-void dequeue(bioskop &Q, adr &P);
+film dequeue(bioskop &Q, adr &P);
 void showSemuaAntrian(bioskop Q);
-bool isEmptyKursi(bioskop Q);
+bool isEmptyJadwal(bioskop Q);
 void printInfoQ(bioskop Q);
 
 
