@@ -18,8 +18,8 @@ using namespace std;
 //stack//
 struct film{
     string judul;
-    int jadwal;
-    int tiketID;
+    string jadwal;
+    string tiketID;
 };
 
 struct tiket{
@@ -45,8 +45,8 @@ struct bioskop{
 void createFilm(tiket &S);
 bool isEmpty(tiket S);
 bool isFull(tiket S);
-void PushTicket(tiket &S);
-film pop(tiket &S);
+void PushTicket(tiket &S, string judul, string jadwal);
+void pop(tiket &S);
 void printInfo(tiket S);
 
 
@@ -55,7 +55,6 @@ void createAntrian(bioskop &Q);
 void CreateElement(film filmBaru, adr &P);
 void enqueue(bioskop &Q, adr P);
 film dequeue(bioskop &Q, adr &P);
-void showSemuaAntrian(bioskop Q);
 bool isEmptyJadwal(bioskop Q);
 void printInfoQ(bioskop Q);
 

@@ -1,7 +1,13 @@
 # depslib dependency file v1.0
-1584205420 source:c:\kuliah\semester 3\struktur data\tubes\main.cpp
-	<iostream>
+1672587928 source:c:\kuliah\semester 3\struktur data\tubes\main.cpp
+	"snq.h"
 
 1672313057 source:e:\data kuliah\struktur data\tubes\main.cpp
+	<iostream>
+
+1672588449 source:c:\kuliah\semester 3\struktur data\tubes\snq.cpp
+	"snq.h"
+
+1672587118 c:\kuliah\semester 3\struktur data\tubes\snq.h
 	<iostream>
 
