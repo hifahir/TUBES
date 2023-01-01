@@ -18,8 +18,7 @@ using namespace std;
 //stack//
 struct film{
     string judul;
-    string jadwal;
-    string tiketID;
+    string durasi;
 };
 
 struct tiket{

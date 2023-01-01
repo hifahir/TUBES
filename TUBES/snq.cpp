@@ -24,11 +24,11 @@ bool isFull(tiket S){
 
 }
 
-void PushTicket(tiket &S, string judul, string jadwal){
+void PushTicket(tiket &S, string judul, string durasi){
     if(isFull(S) == false){
         Top(S)++;
         infoS(S)[Top(S)].judul = judul;
-        infoS(S)[Top(S)].jadwal = jadwal;
+        infoS(S)[Top(S)].durasi = durasi;
     }
 
 }
@@ -47,9 +47,10 @@ void printInfo(tiket S){
     if (isEmpty(S)){
         cout<<"Stack Kosong"<<endl;
     } else {
-        //cout<<"Jumlah Tiket"<<endl;
         for(i = S.Top ; i>=1; i--){
-            cout<<S.infoS[i].judul << endl;
+            cout<<S.infoS[i].judul<<endl;
+            cout<<S.infoS[i].durasi<<endl;
+            cout<<endl;
         }
     }
 }
@@ -84,10 +85,10 @@ film dequeue(bioskop &Q, adr &P){
     P = Head(Q);
 
     keluar.judul = Head(Q)->info.judul;
-    keluar.jadwal = Head(Q)->info.jadwal;
+    keluar.durasi = Head(Q)->info.durasi;
 
     if(isEmptyJadwal(Q)){
-        cout<<"<<<<<<<<<<<<<<<<< Tidak Ada Antrian >>>>>>>>>>>>>>>>>>>>>>>";
+        cout<<"================== Tidak Ada Antrian ==================";
     } else if (Tail(Q)== Head(Q)) {
         Tail(Q) == nil;
         Head(Q) == nil;
@@ -105,7 +106,7 @@ void printInfoQ(bioskop Q){
         P = Head(Q);
         while(P != NULL){
             cout<<"Judul Film: "<<info(P).judul<<endl;
-            cout<<"Jadwal Film: "<<info(P).jadwal<<endl;
+            cout<<"Durasi Film (Jam : Menit): "<<info(P).durasi<<endl;
             cout<<endl;
             P = next(P);
         }

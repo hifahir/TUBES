@@ -20,8 +20,8 @@ int main()
     while(i <= x){
         cout<<"Judul: ";
         cin>>data.judul;
-        cout<<"Jadwal: ";
-        cin>>data.jadwal;
+        cout<<"Durasi (Jam : Menit): ";
+        cin>>data.durasi;
         cout<<endl;
         CreateElement(data, P);
         enqueue(Q, P);
@@ -34,13 +34,13 @@ int main()
         cout<<endl;
         cout<<"Silahkan untuk menonton film ke-"<< i <<endl;
         data = dequeue(Q, P);
-        PushTicket(S, data.judul, data.jadwal);
+        PushTicket(S, data.judul, data.durasi);
         cout<< "==================== DATA HISTORY FILM ====================" <<endl;
         printInfo(S);
         cout<<endl;
         i++;
-
     }
+    cout<<"============== FILM SELESAI DIPUTAR SEMUA =============="<<endl;
 //    cout<< "==================== DATA ANTRIAN FILM ====================" <<endl;
 //    printInfoQ(Q);
 //    cout<<endl;
@@ -70,7 +70,6 @@ int main()
 //        pop(S);
 //    }
 
-//    cout<<"============== FILM SELESAI DIPUTAR SEMUA =============="<<endl;
 //    printInfo(S);
 //    cout<<endl;
 }
