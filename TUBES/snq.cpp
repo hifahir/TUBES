@@ -47,9 +47,9 @@ void printInfo(tiket S){
     if (isEmpty(S)){
         cout<<"Stack Kosong"<<endl;
     } else {
-        cout<<"Jumlah Tiket"<<endl;
-        for(i = 0 ; i>=1; i--){
-            cout<<S.infoS[i].judul;
+        //cout<<"Jumlah Tiket"<<endl;
+        for(i = S.Top ; i>=1; i--){
+            cout<<S.infoS[i].judul << endl;
         }
     }
 }

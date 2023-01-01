@@ -7,6 +7,7 @@ int main()
     film data;
     tiket S;
     createAntrian(Q);
+    createFilm(S);
     int x;
     int i = 1;
     adr P;
@@ -26,34 +27,50 @@ int main()
         enqueue(Q, P);
         i++;
     }
-    cout<< "==================== DATA ANTRIAN FILM ====================" <<endl;
-    printInfoQ(Q);
-    cout<<endl;
-
-    cout<<"Silahkan untuk menonton film pertama"<<endl;
-
-    createFilm(S);
-
-    for(i=0; i <= 0; i++){
+    i = 1;
+    while (i <= 5){
+        cout<< "==================== DATA ANTRIAN FILM ====================" <<endl;
+        printInfoQ(Q);
+        cout<<endl;
+        cout<<"Silahkan untuk menonton film ke-"<< i <<endl;
         data = dequeue(Q, P);
         PushTicket(S, data.judul, data.jadwal);
+        cout<< "==================== DATA HISTORY FILM ====================" <<endl;
+        printInfo(S);
+        cout<<endl;
+        i++;
+
     }
-    cout<<endl;
+//    cout<< "==================== DATA ANTRIAN FILM ====================" <<endl;
+//    printInfoQ(Q);
+//    cout<<endl;
+//
+//    cout<<"Silahkan untuk menonton film pertama"<<endl;
+//
+//    createFilm(S);
+//    data = dequeue(Q, P);
+//    PushTicket(S, data.judul, data.jadwal);
+//    printInfoQ(Q);
+//    for(i; i <= ; i++){
+//        data = dequeue(Q, P);
+//        PushTicket(S, data.judul, data.jadwal);
+//    }
+//    cout<<endl;
+//
+//    cout<<"==================== DATA ANTRIAN FILM ===================="<<endl;
+//    printInfoQ(Q);
+//    cout<<endl;
+//
+//    cout<<"==================== FILM SELANJUTNYA ===================="<<endl;
+//    printInfo(S);
+//    cout<<endl;
+//
+//    for(i = 0; i <= 0; i++){
+//        data = dequeue(Q, P);
+//        pop(S);
+//    }
 
-    cout<<"==================== DATA ANTRIAN FILM ===================="<<endl;
-    printInfoQ(Q);
-    cout<<endl;
-
-    cout<<"==================== FILM SELANJUTNYA ===================="<<endl;
-    printInfo(S);
-    cout<<endl;
-
-    for(i = 0; i <= 0; i++){
-        data = dequeue(Q, P);
-        pop(S);
-    }
-
-    cout<<"============== FILM SELESAI DIPUTAR SEMUA =============="<<endl;
-    printInfo(S);
-    cout<<endl;
+//    cout<<"============== FILM SELESAI DIPUTAR SEMUA =============="<<endl;
+//    printInfo(S);
+//    cout<<endl;
 }
