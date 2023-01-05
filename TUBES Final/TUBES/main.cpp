@@ -43,35 +43,5 @@ int main()
         i++;
     }
     cout<<"============== FILM SELESAI DIPUTAR SEMUA =============="<<endl;
-//    cout<< "==================== DATA ANTRIAN FILM ====================" <<endl;
-//    printInfoQ(Q);
-//    cout<<endl;
-//
-//    cout<<"Silahkan untuk menonton film pertama"<<endl;
-//
-//    createFilm(S);
-//    data = dequeue(Q, P);
-//    PushTicket(S, data.judul, data.jadwal);
-//    printInfoQ(Q);
-//    for(i; i <= ; i++){
-//        data = dequeue(Q, P);
-//        PushTicket(S, data.judul, data.jadwal);
-//    }
-//    cout<<endl;
-//
-//    cout<<"==================== DATA ANTRIAN FILM ===================="<<endl;
-//    printInfoQ(Q);
-//    cout<<endl;
-//
-//    cout<<"==================== FILM SELANJUTNYA ===================="<<endl;
-//    printInfo(S);
-//    cout<<endl;
-//
-//    for(i = 0; i <= 0; i++){
-//        data = dequeue(Q, P);
-//        pop(S);
-//    }
 
-//    printInfo(S);
-//    cout<<endl;
 }

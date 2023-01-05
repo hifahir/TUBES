@@ -15,19 +15,19 @@ using namespace std;
 #define nil NULL
 
 
-//stack//
+//queue//
 struct film{
     string judul;
     string durasi;
 };
 
+//stack//
 struct tiket{
     film infoS[50];
     int Top;
 };
 
 
-//queue//
 typedef struct element *adr;
 
 struct element{
